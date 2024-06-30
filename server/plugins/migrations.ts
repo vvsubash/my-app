@@ -6,7 +6,7 @@ export default defineNitroPlugin(async () => {
 
   onHubReady(async () => {
     await migrate(useDrizzle(), {
-      migrationsFolder: "../../database/migrations",
+      migrationsFolder: "../database/migrations",
     })
       .then(() => {
         consola.success("Database migrations done");
