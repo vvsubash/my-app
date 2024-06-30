@@ -9,11 +9,13 @@
     "deploy": "nuxthub deploy",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
     "@nuxt/eslint": "^0.3.13",
     "@nuxthub/core": "^0.7.0",
+    "@nuxtjs/tailwindcss": "^6.12.0",
     "drizzle-orm": "^0.31.2",
     "nuxt": "^3.12.2"
   },
