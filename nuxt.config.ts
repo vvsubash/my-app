@@ -19,6 +19,7 @@ export default defineNuxtConfig({
       tasks: true,
     },
   },
+  ssr: false,
   // Development
   devtools: { enabled: true },
 });
