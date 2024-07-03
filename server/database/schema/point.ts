@@ -1,6 +1,7 @@
 import { relations } from "drizzle-orm";
 import { sqliteTable, integer, text } from "drizzle-orm/sqlite-core";
 import { guard } from "./guard";
+import { shift } from "./shift";
 
 export const point = sqliteTable("point", {
   id: integer("id", { mode: "number" }).primaryKey({
@@ -12,4 +13,5 @@ export const point = sqliteTable("point", {
 
 export const pointRelation = relations(point, ({ many }) => ({
   guards: many(guard),
+  shifts: many(shift),
 }));
